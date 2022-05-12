@@ -1,5 +1,5 @@
 # worldle
-![Screenshot_2022-05-13-00-20-51-009_com example worldle](https://user-images.githubusercontent.com/64940244/168148464-2aab75f9-fe53-4c2e-9877-4297e802d0cc.jpg)
+
 
 A new Flutter project
 
