@@ -13,17 +13,22 @@ class wordle extends StatelessWidget {
       body: Container(
         child: Column(
           mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: const [
-            Titlebar(),
-            Divider(
-              height: 1,
-              thickness: 0.5,
-              color: Colors.white,
+          children: [
+            const Titlebar(),
+            const SizedBox(
+              height: 18,
             ),
-            grid(),
-            keyboard()
+            const grid(),
+            const SizedBox(
+              height: 18,
+            ),
+            Column(
+              children: const [
+                keyboard(),
+              ],
+            )
           ],
         ),
       ),

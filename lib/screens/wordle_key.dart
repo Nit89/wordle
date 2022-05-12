@@ -7,7 +7,7 @@ class WordleKey extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Widget keycap;
-    double width = 60;
+    // double width = 6400;
     if (letter == "_") {
       keycap = Container(
           child: const Text(
@@ -25,7 +25,7 @@ class WordleKey extends StatelessWidget {
         color: Colors.white,
       );
     } else {
-      width = 40;
+      //width = 40;
       keycap = Text(
         letter,
         style: const TextStyle(
@@ -36,7 +36,7 @@ class WordleKey extends StatelessWidget {
       );
     }
     return Container(
-      width: width,
+      // width: width,
       height: 60,
       alignment: Alignment.center,
       padding: const EdgeInsets.all(10),

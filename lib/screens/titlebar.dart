@@ -5,72 +5,81 @@ class Titlebar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Padding(
-        padding: const EdgeInsets.only(top: 18.0),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Row(
-              children: [
-                const SizedBox(
-                  width: 5,
-                ),
-                const Icon(
-                  Icons.menu,
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(top: 30.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Row(
+                children: [
+                  const SizedBox(
+                    width: 5,
+                  ),
+                  const Icon(
+                    Icons.menu,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                  const SizedBox(
+                    width: 8,
+                  ),
+                  Container(
+                    child: const Icon(
+                      Icons.question_mark_outlined,
+                      color: Colors.white,
+                    ),
+                    decoration: BoxDecoration(
+                        border: Border.all(width: 3.0, color: Colors.white),
+                        shape: BoxShape.circle),
+                  ),
+                  const SizedBox(
+                    width: 5,
+                  ),
+                ],
+              ),
+              const Text(
+                "Wordle",
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
                   color: Colors.white,
-                  size: 30,
                 ),
-                const SizedBox(
-                  width: 8,
-                ),
-                Container(
-                  child: const Icon(
-                    Icons.question_mark_outlined,
+              ),
+              Row(
+                children: const [
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Icon(
+                    Icons.bar_chart_outlined,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                  SizedBox(
+                    width: 8,
+                  ),
+                  Icon(
+                    Icons.settings,
                     color: Colors.white,
                   ),
-                  decoration: BoxDecoration(
-                      border: Border.all(width: 3.0, color: Colors.white),
-                      shape: BoxShape.circle),
-                ),
-                const SizedBox(
-                  width: 5,
-                ),
-              ],
-            ),
-            const Text(
-              "Wordle",
-              style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-              ),
-            ),
-            Row(
-              children: const [
-                SizedBox(
-                  width: 5,
-                ),
-                Icon(
-                  Icons.bar_chart_outlined,
-                  color: Colors.white,
-                  size: 30,
-                ),
-                SizedBox(
-                  width: 8,
-                ),
-                Icon(
-                  Icons.settings,
-                  color: Colors.white,
-                ),
-                SizedBox(
-                  width: 5,
-                ),
-              ],
-            )
-          ],
+                  SizedBox(
+                    width: 5,
+                  ),
+                ],
+              )
+            ],
+          ),
         ),
-      ),
+        const SizedBox(
+          height: 5,
+        ),
+        const Divider(
+            // height: 1,
+            // thickness: 0.5,
+            color: Color.fromARGB(255, 126, 125, 125)),
+      ],
     );
   }
 }

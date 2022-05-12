@@ -6,13 +6,14 @@ class Wordleletterbox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 50,
-      height: 50,
+      width: 60,
+      height: 60,
       alignment: Alignment.center,
       padding: const EdgeInsets.all(10),
-      margin: const EdgeInsets.all(2),
+      margin: const EdgeInsets.all(3),
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.grey, width: 2),
+        border: Border.all(
+            color: const Color.fromARGB(255, 126, 125, 125), width: 2),
       ),
     );
   }
